@@ -48,17 +48,17 @@ html {
 
 :root {
     --primary: #2E7D32;
-    /* أخضر طفرة الأساسي */
+    
     --primary-light: #4CAF50;
-    /* أخضر فاتح */
+   
     --primary-dark: #1B5E20;
-    /* أخضر داكن */
+  
     --accent: #FF9800;
-    /* برتقالي كم لمسة تنشيطية */
+   
     --secondary: #8D6E63;
-    /* لون ترابي/بيج */
+
     --light-bg: #F8F9FA;
-    /* خلفية فاتحة */
+
 }
 
 body {
@@ -79,7 +79,20 @@ a {
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
 
+/* Firefox */
+body {
+  scrollbar-width: none;
+}
+
+/* IE & Old Edge */
+body {
+  -ms-overflow-style: none;
+}
 /* h1,
 h2,
 h3,
@@ -273,6 +286,8 @@ body {
     color: #fff;
     z-index: -1;
 }
+
+
 
 .section-title {
     color: var(--primary);
@@ -2103,3 +2118,11 @@ ul.link li a::after {
             }
         }
     
+
+        .breadcrumbs {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+        url('../images/slider-banner (1).jpg') center/cover;
+    min-height: 50vh;
+    color: #fff;
+    z-index: -1;
+}
