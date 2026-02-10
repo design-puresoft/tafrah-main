@@ -1,0 +1,29 @@
+.hottest .hottest_box::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -30px;
+    width: 31px;
+    height: 100%;
+    background: url(../images/h_cross.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center center;
+    transform: scale(-1);
+}
+
+.choose_img {
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: rotatey(180deg);
+}
+
+.choose_text {
+    float: right;
+    padding-right: 25px;
+}
